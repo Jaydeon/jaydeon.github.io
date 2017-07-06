@@ -42,7 +42,7 @@
 							-->
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-list-ul">Resume</span></a></li>
+								<li><a href="#resume" id="resume-link" class="skel-layers-ignoreHref"><span class="icon fa-list-ul">Resume</span></a></li>
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
 								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 							</ul>
@@ -58,7 +58,7 @@
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
 							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="mailto:someone@example.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="mailto:jaydenma00@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 
 				</div>
@@ -78,14 +78,14 @@
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Read more</a>
+								<a href="#resume" class="button scrolly">Read more</a>
 							</footer>
 
 						</div>
 					</section>
 
 				<!-- Resume -->
-					<section id="portfolio" class="two">
+					<section id="resume" class="two">
 						<div class="container">
 
 							<header>
@@ -121,13 +121,8 @@
 							</header>
 
 							<p>Feel free to contact me for further information or questions!</p>
-
-							<?php
-							$action=$_REQUEST['action'];
-							if ($action=="")    /* display the contact form */
-								{
-								?>												
-								<form method="post" action="">
+											
+								<form method="post" action="mailto:jaydenma00@gmail.com?subject=Email Subject&body=Contents of email">
 									<div class="row">
 										<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
 										<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
@@ -139,24 +134,6 @@
 										</div>
 									</div>
 								</form>
-								<?php
-								} 
-							else                /* send the submitted data */
-								{
-								$name=$_REQUEST['name'];
-								$email=$_REQUEST['email'];
-								$message=$_REQUEST['message'];
-								if (($name=="")||($email=="")||($message==""))
-									{
-									echo "hi";
-									}
-								else{		
-									$from="From: $name<$email>\r\nReturn-path: $email";
-									$subject="Message sent using your contact form";
-									// mail("youremail@yoursite.com", $subject, $message, $from);
-									echo "Email sent!";
-									}
-								}  
 						</div>
 					</section>
 
