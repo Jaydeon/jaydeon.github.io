@@ -1921,7 +1921,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #47B2FF;
+			background-color: #7AC9FF;
 		}
 
 		input[type="button"]:active,
@@ -1929,7 +1929,7 @@
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #7AC9FF;
+			background-color: #47B2FF;
 		}
 
 /* Item */
