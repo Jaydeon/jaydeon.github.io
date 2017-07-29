@@ -1,4 +1,8 @@
 User-Agent: *
+<<<<<<< HEAD
 Allow: / 
+=======
+Disallow:
+>>>>>>> origin/master
 
 Sitemap: http://jaydenma.us/sitemap.xml
