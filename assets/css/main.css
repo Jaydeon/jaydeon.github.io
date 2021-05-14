@@ -2136,7 +2136,7 @@
 					padding-left: 0;
 					margin-left: 0;
 				}
-		#footer .body {
+		#footer .test {
 			background-color: #ffffff;
 			text-align: left;
 		}
@@ -2566,5 +2566,13 @@
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
+			#footer .test {
+				display: block;
+				line-height: 1.25em;
+				border: 0;
+				padding: 0;
+				margin: 1em 0 0 0;
+				margin-top: 0;
+			}
 
 	}
