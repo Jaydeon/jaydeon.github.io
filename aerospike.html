@@ -87,26 +87,26 @@
 						<div class="container">
 
 							<header>
-								<h2>Thrust Vectoring Aerospike Rocket Nozzle</h2>
+								<h2>Thrust Vectoring Aerospike Rocket Nozzle: Enceladus</h2>
 							</header>
 
-							<p>In Fall 2021, a team of 4 from the Boston University Rocket Propulsion Group including myself proposed testing an aerospike nozzle for the two-semester senior capstone course. While aerospikes are of interest due to producing optimal thrust at every altitude, there remains fundamental issues in actively cooling the assembly and controlling the thrust vector which continue to be researched today. Using experience from BURPG and aerospace internships, the team tested a variety of configurations to achieve thrust vectoring with secondary fluidic injection. This thrust vectoring method takes advantage of the aerospike's geometry to deliver an impinging flow on the thrust from the central spike, and proving the method would increase the viability of aerospike engines in industry. We named the aerospike Enceladus after the Saturnian moon, because its mass ejection of water-rich jets from the surface is visually simular to the flow from the secondary fluidic injection port.</p> 
+							<p>In Fall 2021, a team of 4 from the Boston University Rocket Propulsion Group including myself proposed testing an aerospike nozzle for the two-semester senior capstone course. While aerospikes are of interest due to producing optimal thrust at every altitude, there remains fundamental issues in actively cooling the assembly and controlling the thrust vector which continue to be researched today. Using experience from BURPG and aerospace internships, the team tested a variety of configurations to achieve thrust vectoring with secondary fluidic injection. This thrust vectoring method takes advantage of the aerospike's geometry to deliver an impinging flow on the thrust from the central spike, and proving the method would increase the viability of aerospike engines in industry. We named the aerospike, and the overall project, Enceladus after the Saturnian moon, because its mass ejection of water-rich jets from the surface is visually simular to the flow from the secondary fluidic injection port.</p> 
 							
 							<p>To fit the project within the $2400 allotted, the team used inert gas to simulate propellants and 3D printed the nozzle for rapid iteration. I am the lead fluid systems and test operations engineer working to design, construct, and operate the test stand for the aerospike, due to my internship in rocket testing. I designed the initial P&ID to simulate propellant feed into the aerospike thruster using inert nitrogen gas. The team will use this to conduct baseline analysis and testing of a non-thrust vectoring aerospike before adding the thrust vectoring components.</p>
 							<p>Once the test stand verifies the aerospike produces nominal design thrust, thrust vector control elements will be installed into the test stand. This involves a secondary flow line that transports nitrogen into the spike and impinges to pitch the thrust away from the axial direction. Because the aerospike is axisymmetric, one direction is tested and is considered a valid simulation for thrust vectoring in the vehicle pitch and yaw. There would be two load cells taking axial thrust equally and a third load cell measuring lateral thrust in the pitched direction, read by an Arduino Uno.</p>
 						
 						
 							<center><a class="image fit"><img src="aerospikepid.JPG" alt="" style="max-width:960px;text-align:center" width="100%" height="auto"/></a></center>
-							<p><i>Piping and instrumentation diagram for the test stand fluid system design.</i></p>
+							<p><i>Piping and instrumentation diagram for Enceladus test stand fluid system design.</i></p>
 							<center><a class="image fit"><img src="aeroteststand.jpg" alt="" style="max-width:660px;text-align:center" width="100%" height="auto"/></a></center>
-							<p><i>CAD of test stand assembly.</i></p>
+							<p><i>CAD assembly of Enceladus test stand.</i></p>
 							
 							<p>I designed the aerospike using an open-source Python code that generates a 2D sketch to revolve when upstream conditions and desired performance metrics are inputted. The code was written by research students at MIT working on aerospike engines, based on C.C. Lee's paper for NASA plug nozzles. For the team's nozzle, upstream conditions are 200 psig of pure nitrogen at room temperature, with an expected thrust of 8.65 lbf. The sketch was revolved to model the nozzle in Solidworks, with a 75% truncation of the spike tip for manufacturability.</p>
 							<p>After researching tradeoffs between the feasibility of FDM and SLA and printing test articles, the team found FDM to be superior given its reliability, quality, and availability with the free-to-use campus printers. SLA test articles came out in poor quality with rough and sticky surfaces because of the printer limitations, while FDM test articles printed as expected with smoother surface quality. Since the aerospike was printed in parts due to internal geometry, the team designed and machined an aluminum injector for a better interface with the test stand, as the geometry of the forward end of the aerospike was fixed.</p>
 							<center><a class="image fit"><img src="aerospikeprint.jpg" alt="" style="max-width:360px;text-align:center" width="100%" height="auto"/></a></center>
-							<p><i>Test article of aerospike thruster with 3D printed and machined components.</i></p>
+							<p><i>Prototype thruster with 3D printed and machined components.</i></p>
 							<center><a class="image fit"><img src="xsection.JPG" alt="" style="max-width:360px;text-align:center" width="100%" height="auto"/></a></center>
-							<p><i>Section view of aerospike shows how secondary fluidic injection works.</i></p>
+							<p><i>Section view of thruster shows how secondary fluidic injection works.</i></p>
 							
 							<p>Computational fluid dynamics is used in parallel with the test stand to verify the calculated 8.65 lbf thrust from the aerospike, and is also used to predict the ideal position and size of port on the spike that would lead to the greatest control authority given a range of pressures. By proving the CFD model using the thrust performance, the team is confident in the model's ability to predict the optimal port parameters and be able to validate the parameters using the test stand. Using compressible flow equations with the profiles for velocity, pressure, density, and temperature, the mass flow and velocity can be extracted from the CFD and be used to calculate the analyzed thrust. Ultimately, 8.6 lbf was calculated from the non-thrust vectoring model, proving the analysis correct. Structural analysis was performed on the print to ensure it will not yield as a pressure vessel using an elevated margin of safety given the anisotropic structure of FDM, and eight 6-32 bolts are used to fasten the assembly to compress the o-ring face seals and prevent bolt failure.</p>
 							<center><a class="image fit"><img src="aerocfd.jpg" alt="" style="max-width:960px;text-align:center" width="100%" height="auto"/></a></center>
@@ -118,7 +118,7 @@
 							src="https://www.youtube.com/watch?v=AmclXxUiHwI">
 							
 							</iframe>
-							<p><i>Thrust validation testing of non-thrust vectoring aerospike.</i></p>
+							<p><i>Thrust validation testing of Enceladus without any thrust vectoring.</i></p>
 						</div>
 					</section>	
 			</div>
