@@ -90,36 +90,36 @@
 								<h2>Gas Generator System</h2>
 							</header>
 							<p>Pursuit is a liquid bipropellant rocket developed by the Boston University Rocket Propulsion Group, propelled by a nitrous oxide-isopropyl alcohol engine that is pressure-fed by nitrogen. To maximize the performance of our pressure-fed propellants, the group researched the utilization of a modified gas generator and heat exchanger system. The goal is to combust the propellants into onboard exhaust gases that increase the efficiency of our feed system, like gas generator cycles in industry. However, instead of powering turbopumps, the exhaust gases would heat our nitrogen pressurant by 400 degrees through a shell-in-tube heat exchanger, and cause it to expand as it heats up.</p>
-							<img src="pst iso.JPG" alt="" style="max-width:720px;text-align:center" width="100%" height="auto"/>
+							<img src="pst iso.jpg" alt="" style="max-width:720px;text-align:center" width="100%" height="auto"/>
 							<p><i>Pursuit liquid bipropellant rocket assembly.</i></p>
 							
 							<p>The result is that it takes up more volume to feed the propellants, thereby reducing the amount of nitrogen we need onboard and more critically, reducing the number of heavy compositive-overwrapped pressure vessels in the vehicle. At the end of its design, the entire system was projected to save 150 lbm of mass from the rocket. As a sophomore, I was placed on the team to lead the development of the chamber for the gas generator from the beginning of Pursuit's design in Fall 2019.</p>
 							
 							
-							<p><img src="heatexchanger.JPG" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></p>
+							<p><img src="heatexchanger.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></p>
 							<p><i>System assembly with the gas generator and heat exchanger.</i></p>						
 							
 							
 							<h3>Gas Generator Chamber</h3>
 							<p>As my first ownership of a component from the conceptual phase, I developed technical expertise for structural and fluids design when developing the gas generator chamber that would translate into propulsion development, given that the gas generator was basically a miniature rocket engine.</p> 
 							<p>With the overall goal of the gas generator to generate gases that will reduce vehicle weight, the design of this chamber is different from regular engine chambers in that thrust performance is not optimized. Referencing Rocket Propulsion Elements, I started with chamber geometry. While a (semi-)spherical design offers lower mass for the same performance, a cylindrical chamber was chosen for easier manufacturing; a cylindrical chamber could be simply turned while spherical chambers require multi-axis milling or additives. At under 2 inches long, the small scale of the gas generator also meant that the mass difference would be negligible, making spherical a poor trade-off.</p>
-							<p><img src="chambershape.JPG" alt="" style="max-width:240px;text-align:center" width="100%" height="auto"/></p>
+							<p><img src="chambershape.jpg" alt="" style="max-width:240px;text-align:center" width="100%" height="auto"/></p>
 							<p><i>Comparisons of spherical, near-spherical, and cylindrical rocket chambers.</i></p>
 							<p>Having chosen the cylindrical design, I looked into length and diameter calculations. We chose to constrain the diameter with the injector's diameter for interface simplicity, and used that diameter to drive the chamber length. Based on the characteristic length and stay time, we calculated the minimum length for complete combustion using a characteristic length of 35 inches. N2O/IPA is not used in industry as a bipropellant so we used the team's test data for characteristic length from the Lotus Dev 2, Pursuit's N2O-IPA engine.</p>
 							<center><a class="image fit"><img src="lotus2.png" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></a></center>
 							<p><i>Pursuit rocket's engine Lotus Dev 2, which was used to size the characteristic length of the chamber.</i></p>
 							<p>Researching into materials, we eliminated any cooling system due to complexity at the small scale of the system. Because of this and the system's needed operation for the whole duration of flight, I needed to find a material that would not yield under the combustion temperature and pressure. Stainless steel was the most economical choice, with AISI 304 being chosen for having sufficient performance with a factor of safety. Other materials commonly used for chambers included aluminum, iron, copper, and titanium which were calculated to unusable because of the lack of cooling. Superalloys were also considered including inconel and hastelloy, though stainless steel's performance at a much lower cost made it optimal.</p>
-							<p><img src="stresscurve.JPG" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></p>
+							<p><img src="stresscurve.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></p>
 							<p><i>Stainless steel 304 yield stress curve used to analyze structural integrity of chamber.</i></p>
 							<p>To interface with the injector at the top of the chamber and the heat exchanger at the bottom, seals were designed. Directly with the injector, two o-rings were used to prevent the combustion gases from escaping; double sealing is a standard for multi-propellant sealing for safety. I researched proper polymers for a stainless steel interface as well as the correct o-ring sizes and required compressive forces, selecting silicone o-rings compressed with four 10-32 bolts. For the heat exchanger interface, the gases are fed into a tube in the heat exchanger, so an SAE boss port was designed to be machined into the chamber for the tube to seal. Unlike typical chambers, choking the flow to reach Mach 1 is not necessary, nor desired, as it is not meant to be used as thrust, so we chose a 3/8" boss port as the minimum tubing diameter before choking to prevent complexities associated with designing for supersonic flow.</p>
 							
-							<p><img src="seal.JPG" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></p>
+							<p><img src="seal.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></p>
 							<p><i>Component breakdown of gas generator showing internal geometry and face seals.</i></p>
 							<p>I then modeled the chamber in Solidworks to present as a conceptual design review and preliminary design review. I took a semester off BURPG after finishing the chamber design to study abroad in Spring 2020.</p>
 							
 							<center><a class="image fit"><img src="chamber.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></a></center>
 							<p><i>CAD model of the gas generator chamber.</i></p>
-							<center><img src="gg.JPG" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/><img src="ggphys.JPG" alt="" style="max-width:360px;text-align:center" width="100%" height="auto"/></center>
+							<center><img src="gg.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/><img src="ggphys.jpg" alt="" style="max-width:360px;text-align:center" width="100%" height="auto"/></center>
 							<p><i>(a) CAD assembly with igniter, injector, and chamber assembled. (b) 3D printed mockup of gas generator.</i></p>
 							
 							<h3>Heat Exchanger</h3>
