@@ -107,7 +107,7 @@
 							<p><i>Comparisons of spherical, near-spherical, and cylindrical rocket chambers.</i></p>
 							<p>Having chosen the cylindrical design, I looked into length and diameter calculations. We chose to constrain the diameter with the injector's diameter for interface simplicity, and used that diameter to drive the chamber length. Based on the characteristic length and stay time, we calculated the minimum length for complete combustion using a characteristic length of 35 inches. N2O/IPA is not used in industry as a bipropellant so we used the team's test data for characteristic length from the Lotus Dev 2, Pursuit's N2O-IPA engine.</p>
 							<center><a class="image fit"><img src="lotus2.png" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></a></center>
-							<p><i>Pursuit rocket's engine Lotus Dev 2, which was used to size the characteristic length of the chamber.</i></p>
+							<p><i>One of BURPG's N2O-IPA engines, Lotus Dev 2, which had data used to size the characteristic length of the chamber.</i></p>
 							<p>Researching into materials, we eliminated any cooling system due to complexity at the small scale of the system. Because of this and the system's needed operation for the whole duration of flight, I needed to find a material that would not yield under the combustion temperature and pressure. Stainless steel was the most economical choice, with AISI 304 being chosen for having sufficient performance with a factor of safety. Other materials commonly used for chambers included aluminum, iron, copper, and titanium which were calculated to unusable because of the lack of cooling. Superalloys were also considered including inconel and hastelloy, though stainless steel's performance at a much lower cost made it optimal.</p>
 							<p><img src="stresscurve.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></p>
 							<p><i>Stainless steel 304 yield stress curve used to analyze structural integrity of chamber.</i></p>
@@ -115,23 +115,34 @@
 							
 							<p><img src="seal.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></p>
 							<p><i>Component breakdown of gas generator showing internal geometry and face seals.</i></p>
-							<p>I then modeled the chamber in Solidworks to present as a conceptual design review and preliminary design review. I took a semester off BURPG after finishing the chamber design to study abroad in Spring 2020.</p>
+							<p>I then modeled the chamber in Solidworks to present as a conceptual design review and preliminary design review, along with the system lead who finished modeling the injector and igniter. I took a semester off BURPG after finishing the chamber design to study abroad in Spring 2020.</p>
 							
-							<center><a class="image fit"><img src="chamber.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></a></center>
-							<p><i>CAD model of the gas generator chamber.</i></p>
-							<center><img src="gg.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/><img src="ggphys.jpg" alt="" style="max-width:360px;text-align:center" width="100%" height="auto"/></center>
-							<p><i>(a) CAD assembly with igniter, injector, and chamber assembled. (b) 3D printed mockup of gas generator.</i></p>
+							
+							<img src="chamber.jpg" alt="" style="max-width:360px;text-align:center" width="100%" height="auto"/><img src="gg.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/>
+							<p><i>(a) CAD model of gas generator chamber. (b) CAD assembly of gas generator with chamber, injector, and igniter assembled.</i></p>
 							
 							<h3>Heat Exchanger</h3>
 							<p>After returning to the team in Summer 2020, the chamber design was ready for manufacturing. I transitioned to finishing the heat exchanger of the gas generator system. The heat exchanger design was finished, but required finite element analysis for thermal-structural stresses seen from rapid temperature gradients. I learned ANSYS to develop the FEA, though it proved to require significant research because of the difficulty in thermal-structural analysis for complex geometry. I researched the analysis throughout the summer and continued to develop the ANSYS model in Fall 2020.</p>
+							<img src="hx.PNG" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/>
+							<p><i>Unfinished model of heat exchanger thermal stress analysis from ANSYS Structural.</i></p>
+														
 							<p>I also led and completed the design of the mounting hardware in the fall for the gas generator system, to attach the system to the airframe of the rocket. Calculating stresses seen from the rocket acceleration and the system mass, I chose commercial L-brackets and bolts that would support the system throughout flight with a factor of safety. I modeled these into the system assembly, and used to complete the ANSYS model.</p>
 							
-							<img src="hx.PNG" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/>
-							<p><i>Heat exchanger thermal stress analysis from ANSYS Structural.</i></p>
+							<img src="heatex.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/>
+							<p><i>Full heat exchanger assembly, including structural brackets.</i></p>
+							
 							<p>As of Spring 2021, the team has removed the gas generator system from the vehicle due to logistical complications from COVID-19. The pandemic pushed back the timeline by a year, as Pursuit was originally meant to launch in Summer 2021; complications in the 2020-2021 school year arose because the team no longer has access to the lab, collaboration is limited by completely virtual meetings, and funding from the university has been cut. Despite these challenges, several complex systems including the gas generator have been removed to ensure Pursuit launches in Summer 2022 to demonstrate the team's ability to engineer a liquid rocket from concept to launch. While I transitioned into the role of lead fluid systems engineer to finish the still-existing feed system design before the end of the spring, the gas generator system design and test plan has been completed by the former fluids lead in the hopes that the team will use it on a future vehicle.</p>
 							
 							<h3>Injector Testing</h3>
-							<p>
+							<p>In Spring 2022, with work on the feed system mostly complete, I reopened work on the gas generator to ensure the project did not die. I setup a test for the mass flow rate of the injector ports to validate the design; this would have been the first experiment in the original test campaign. Using a water flow test stand that we built to support development of the feed system, I redesigned the outlet to split into two lines to simulate the fuel and oxidizer feed.</p>
+							
+							<img src="ggtest.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/>
+							<p><i>Test setup to route 17 psig of water to both 1/4" gas generator feed lines.</i></p>
+							
+							<p>I 3D printed the gas generator injector and modified the geometry to make it easier to manufacture and assemble, since it had been optimized for machining. Since the pressure differential between the propellant pressure and the chamber pressure is designed to be 17 psid, the test flowed 17 psig of water into both 1/4" propellant inlets.</p>
+							
+							<img src="ggphys.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/>
+							<p><i>3D printed mockup of entire assembly, though only the injector needs to be water flowed.</i></p>
 							
 							
 
@@ -143,7 +154,7 @@
 			<div id="footer">
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>2017-2021 Domain and web design by Jayden Ma. Hosted by Github Pages. CSS and Javascript by HTML5UP ("Prologue").</li>
+						<li>2017-2022 Domain and web design by Jayden Ma. Hosted by Github Pages. CSS and Javascript by HTML5UP ("Prologue").</li>
 					</ul>
 
 			</div>
