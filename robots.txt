@@ -1,0 +1,8 @@
+User-Agent: *
+<<<<<<< HEAD
+Allow: / 
+=======
+Disallow:
+>>>>>>> origin/master
+
+Sitemap: http://jaydenma.space/sitemap.xml

@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jayden Ma - Gas Generator System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Jayden Ma - Poughkeepsie, NY - Boston, MA - Boston University - Class of 2022 - Mechanical and Aerospace Engineer"/>
+		<meta name="google-site-verification" content="Ioq2GSrfWIoZgvyyGEbU-7f54Xl3aC5TGcI1Bq9D77U" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<a href="#top" class="scrolly" width="48" height="48" ><span class="image avatar48" height="48" width="48"><img src="favicon5.png" alt="Jayden Ma" height="48" width="48" /></span></a>
+							<h1 id="title">Jayden Ma</h1>
+							<p>Poughkeepsie, NY - Boston, MA</p>
+							<p><strong>Boston University</strong></p>
+							<p><strong>Class of 2022</strong></p>
+							<p><strong>Mechanical and Aerospace Engineer</strong></p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="index" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Back to Home</span></a></li>						
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							
+							<li><a href="https://www.linkedin.com/in/jayden-ma/" target="_blank" rel="external" class="icon fa-linkedin-square"><span class="label">Linkedin</span></a></li>
+																								
+							<li><a href="mailto:jaydenma@bu.edu" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							
+							<li><a href="tel:+8454649918" target="_blank" class="icon fa-phone"><span class="label">Phone</span></a></li>
+							
+							<li><a href="https://www.github.com/jaydeon" target="_blank" rel="external" class="icon fa-github"><span class="label">Github</span></a></li>
+							
+							<li><a href="https://grabcad.com/jayden.ma-1" target="_blank" rel="external" class="icon fa-cube"><span class="label">GrabCAD</span></a></li>						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="footer">
+
+				<!-- Intro -->
+					<!--<section id="top" class="one dark cover">
+						<div class="container">
+							<header>
+								<h3 class="alt">Gauntlet</h3>
+							</header>
+
+						</div>
+					</section>-->
+
+				<!-- Portfolio -->	
+					<section id="portfolio" class="test">
+						<div class="container">
+
+							<header>
+								<h2>Gas Generator System</h2>
+							</header>
+							<p>Pursuit is a liquid bipropellant rocket developed by the Boston University Rocket Propulsion Group, propelled by a nitrous oxide-isopropyl alcohol engine that is pressure-fed by nitrogen. To maximize the performance of our pressure-fed propellants, the group researched the utilization of a modified gas generator and heat exchanger system. The goal is to combust the propellants into onboard exhaust gases that increase the efficiency of our feed system, like gas generator cycles in industry. However, instead of powering turbopumps, the exhaust gases would heat our nitrogen pressurant by 400 degrees through a shell-in-tube heat exchanger, and cause it to expand as it heats up.</p>
+							<img src="pst iso.jpg" alt="" style="max-width:720px;text-align:center" width="100%" height="auto"/>
+							<p><i>Pursuit liquid bipropellant rocket assembly.</i></p>
+							
+							<p>The result is that it takes up more volume to feed the propellants, thereby reducing the amount of nitrogen we need onboard and more critically, reducing the number of heavy compositive-overwrapped pressure vessels in the vehicle. At the end of its design, the entire system was projected to save 150 lbm of mass from the rocket. As a sophomore, I was placed on the team to lead the development of the chamber for the gas generator from the beginning of Pursuit's design in Fall 2019.</p>
+							
+							
+							<p><img src="heatexchanger.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></p>
+							<p><i>System assembly with the gas generator and heat exchanger.</i></p>						
+							
+							
+							<h3>Gas Generator Chamber</h3>
+							<p>As my first ownership of a component from the conceptual phase, I developed technical expertise for structural and fluids design when developing the gas generator chamber that would translate into propulsion development, given that the gas generator was basically a miniature rocket engine.</p> 
+							<p>With the overall goal of the gas generator to generate gases that will reduce vehicle weight, the design of this chamber is different from regular engine chambers in that thrust performance is not optimized. Referencing Rocket Propulsion Elements, I started with chamber geometry. While a (semi-)spherical design offers lower mass for the same performance, a cylindrical chamber was chosen for easier manufacturing; a cylindrical chamber could be simply turned while spherical chambers require multi-axis milling or additives. At under 2 inches long, the small scale of the gas generator also meant that the mass difference would be negligible, making spherical a poor trade-off.</p>
+							<p><img src="chambershape.jpg" alt="" style="max-width:240px;text-align:center" width="100%" height="auto"/></p>
+							<p><i>Comparisons of spherical, near-spherical, and cylindrical rocket chambers.</i></p>
+							<p>Having chosen the cylindrical design, I looked into length and diameter calculations. We chose to constrain the diameter with the injector's diameter for interface simplicity, and used that diameter to drive the chamber length. Based on the characteristic length and stay time, we calculated the minimum length for complete combustion using a characteristic length of 35 inches. N2O/IPA is not used in industry as a bipropellant so we used the team's test data for characteristic length from the Lotus Dev 2, Pursuit's N2O-IPA engine.</p>
+							<center><a class="image fit"><img src="lotus2.png" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></a></center>
+							<p><i>One of BURPG's N2O-IPA engines, Lotus Dev 2, which had data used to size the characteristic length of the chamber.</i></p>
+							<p>Researching into materials, we eliminated any cooling system due to complexity at the small scale of the system. Because of this and the system's needed operation for the whole duration of flight, I needed to find a material that would not yield under the combustion temperature and pressure. Stainless steel was the most economical choice, with AISI 304 being chosen for having sufficient performance with a factor of safety. Other materials commonly used for chambers included aluminum, iron, copper, and titanium which were calculated to unusable because of the lack of cooling. Superalloys were also considered including inconel and hastelloy, though stainless steel's performance at a much lower cost made it optimal.</p>
+							<p><img src="stresscurve.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></p>
+							<p><i>Stainless steel 304 yield stress curve used to analyze structural integrity of chamber.</i></p>
+							<p>To interface with the injector at the top of the chamber and the heat exchanger at the bottom, seals were designed. Directly with the injector, two o-rings were used to prevent the combustion gases from escaping; double sealing is a standard for multi-propellant sealing for safety. I researched proper polymers for a stainless steel interface as well as the correct o-ring sizes and required compressive forces, selecting silicone o-rings compressed with four 10-32 bolts. For the heat exchanger interface, the gases are fed into a tube in the heat exchanger, so an SAE boss port was designed to be machined into the chamber for the tube to seal. Unlike typical chambers, choking the flow to reach Mach 1 is not necessary, nor desired, as it is not meant to be used as thrust, so we chose a 3/8" boss port as the minimum tubing diameter before choking to prevent complexities associated with designing for supersonic flow.</p>
+							
+							<p><img src="seal.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/></p>
+							<p><i>Component breakdown of gas generator showing internal geometry and face seals.</i></p>
+							<p>I then modeled the chamber in Solidworks to present as a conceptual design review and preliminary design review, along with the system lead who finished modeling the injector and igniter. I took a semester off BURPG after finishing the chamber design to study abroad in Spring 2020.</p>
+							
+							
+							<img src="chamber.jpg" alt="" style="max-width:360px;text-align:center" width="100%" height="auto"/><img src="gg.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/>
+							<p><i>(a) CAD model of gas generator chamber. (b) CAD assembly of gas generator with chamber, injector, and igniter assembled.</i></p>
+							
+							<h3>Heat Exchanger</h3>
+							<p>After returning to the team in Summer 2020, the chamber design was ready for manufacturing. I transitioned to finishing the heat exchanger of the gas generator system. The heat exchanger design was finished, but required finite element analysis for thermal-structural stresses seen from rapid temperature gradients. I learned ANSYS to develop the FEA, though it proved to require significant research because of the difficulty in thermal-structural analysis for complex geometry. I researched the analysis throughout the summer and continued to develop the ANSYS model in Fall 2020.</p>
+							<img src="hx.PNG" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/>
+							<p><i>Unfinished model of heat exchanger thermal stress analysis from ANSYS Structural.</i></p>
+														
+							<p>I also led and completed the design of the mounting hardware in the fall for the gas generator system, to attach the system to the airframe of the rocket. Calculating stresses seen from the rocket acceleration and the system mass, I chose commercial L-brackets and bolts that would support the system throughout flight with a factor of safety. I modeled these into the system assembly, and used to complete the ANSYS model.</p>
+							
+							<img src="heatex.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/>
+							<p><i>Full heat exchanger assembly, including structural brackets.</i></p>
+							
+							<p>As of Spring 2021, the team has removed the gas generator system from the vehicle due to logistical complications from COVID-19. The pandemic pushed back the timeline by a year, as Pursuit was originally meant to launch in Summer 2021; complications in the 2020-2021 school year arose because the team no longer has access to the lab, collaboration is limited by completely virtual meetings, and funding from the university has been cut. Despite these challenges, several complex systems including the gas generator have been removed to ensure Pursuit launches in Summer 2022 to demonstrate the team's ability to engineer a liquid rocket from concept to launch. While I transitioned into the role of lead fluid systems engineer to finish the still-existing feed system design before the end of the spring, the gas generator system design and test plan has been completed by the former fluids lead in the hopes that the team will use it on a future vehicle.</p>
+							
+							<h3>Injector Testing</h3>
+							<p>In Spring 2022, with work on the feed system mostly complete, I reopened work on the gas generator to ensure the project did not die. I setup a test for the mass flow rate of the injector ports to validate the design; this would have been the first experiment in the original test campaign. Using a water flow test stand that we built to support development of the feed system, I redesigned the outlet to split into two lines to simulate the fuel and oxidizer feed.</p>
+							
+							<img src="ggtest.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/>
+							<p><i>Test setup to route 17 psig of water to both 1/4" gas generator feed lines.</i></p>
+							
+							<p>I 3D printed the gas generator injector and modified the geometry to make it easier to manufacture and assemble, since it had been optimized for machining. Since the pressure differential between the propellant pressure and the chamber pressure is designed to be 17 psid, the test flowed 17 psig of water into both 1/4" propellant inlets.</p>
+							
+							<img src="ggphys.jpg" alt="" style="max-width:480px;text-align:center" width="100%" height="auto"/>
+							<p><i>3D printed mockup of entire assembly, though only the injector needs to be water flowed.</i></p>
+							
+							
+
+						</div>
+					</section>	
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>2017-2022 Domain and web design by Jayden Ma. Hosted by Github Pages. CSS and Javascript by HTML5UP ("Prologue").</li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="script/validate-form.js"></script>
+
+	</body>
+</html>
+
