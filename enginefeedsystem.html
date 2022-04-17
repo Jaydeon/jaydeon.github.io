@@ -90,12 +90,16 @@
 								<h2>Liquid Rocket Pressurized Feed System</h2>
 							</header>
 
-							<p>Pursuit is a liquid bipropellant rocket developed by the Boston University Rocket Propulsion Group, propelled by a nitrous oxide (N2O)-isopropyl alcohol (IPA) engine and pressure-fed by nitrogen. The goal of the feed system is to deliver the N2O and IPA from the tanks to the engine at their required pressure, density, and mass flow rate using an onboard nitrogen pressurization system to transport the propellants.</p>
+							<p>Pursuit is a liquid bipropellant rocket developed by the Boston University Rocket Propulsion Group, propelled by a nitrous oxide (N2O)-isopropyl alcohol (IPA) engine and pressure-fed by nitrogen.</p>
+							
+							<img src="pst iso.jpg" alt="" style="max-width:720px;text-align:center" width="100%" height="auto"/>
+							<p><i>Pursuit liquid bipropellant rocket assembly.</i></p>
+							
+							<p>The goal of the feed system is to deliver the N2O and IPA from the tanks to the engine at their required pressure, density, and mass flow rate using an onboard nitrogen pressurization system to transport the propellants.</p>
 							
 							<img src="feedsys.jpg" alt="" style="max-width:960px;text-align:center" width="100%" height="auto"/>
 							<p><i>Complete pressurized feed system mated with Pursuit's engine, tanks, bulkheads, and composite-overwrapped pressure vessels.</i></p>
-							<img src="pst iso.jpg" alt="" style="max-width:720px;text-align:center" width="100%" height="auto"/>
-							<p><i>Pursuit liquid bipropellant rocket assembly.</i></p>
+							
 							<h3>Feed System Design</h3>
 							<p>As a junior in Spring 2021, I took on leading the feed system design, and leading the overall vehicle fluid systems team after the prior lead stepped down to graduate. Being on the gas generator design previously, I was unfamiliar with the feed system, which had completed the preliminary design phase with the former lead. At the beginning of the semester, Pursuit's lead engineers decided to remove complex, unproven systems to ensure a successful launch, so the vehicle plumbing had to be quickly redesigned before clearing its critical design phase. I learnd the fluid mechanics involved rapidly and finish out the re-design, leading it through a critical design review by the end of the semester.</p>
 							
@@ -109,8 +113,7 @@
 							
 							<p>With the removed systems, we also decided to move the propellant fill valves from the airframe to fin can, as the propellants are no longer used for the gas generator in the airframe. This allows us to fill and dump the propellant using the same valves, further simplifying the system. Further changes that were made in Fall 2021 to continue simplifying the vehicle included changing the engine from Lotus Dev 2, which is regeneratively cooled, to Iron Lotus, which is heatsink cooled. This led to reducing the burn time to what is possible for the new engine, decreasing the tank lengths for the propellant and number of composite-overwrapped pressure vessels (COPVs) for the pressurant. We also moved the COPVs out of the oxidizer tank and into the airframe; since there is no more heat exchanger to increase pressurant temperature, keeping it in the ambient airframe would be more efficient than the colder oxidizer tank.</p>
 							
-							<img src="lotus2.png" alt="" style="max-width:360px;text-align:center" width="100%" height="auto"/>
-														<img src="ironlotus.jpg" alt="" style="max-width:300px;text-align:center" width="100%" height="auto"/>
+							<img src="vertlotus.png" alt="" style="max-width:170px;text-align:center" width="100%" height="auto"/><img src="vertiron.jpg" alt="" style="max-width:300px;text-align:center" width="100%" height="auto"/>
 							<p><i>(a) Lotus Dev 2, the former planned flight engine which has a regenerative cooling jacket. (b) Iron Lotus, the current planned flight engine which is a simple heatsink.</i></p>
 							
 							<p>Removing components meant the pressure set on the system regulator for the pressurization system also had to change. Fortunately, the previous lead created a MATLAB script to automatically calculate the necessary set pressure given fluid properties, vehicle requirements, and component flow coefficients. However, using the tool required intuition for pressure losses, so I learned to calculate pressure drops for incompressible and compressible flow to use the tool and redo the pressure budget.</p>
@@ -180,6 +183,8 @@
 							Your browser does not support the video tag.</video>
 							
 							<p><i>Full flow leak check using soapy water successfully showing no leaks.</i></p>
+							
+							<p>Proving these custom components is necessary to ensure the entire feed system will function without critical failure. With the validation done throughout the 2021-22 year, assembly of the components can begin and the entire system can be built by the end of the following semester.</p>
 						
 						</div>
 					</section>	
